@@ -28,8 +28,18 @@ soft_green = '#91B59E'
 # 데이터 불러오기
 # =====================================================
 
+# main.py가 있는 폴더 기준으로 경로 설정
+BASE_DIR = Path(__file__).resolve().parent
+
+csv_path = (
+    BASE_DIR
+    / 'data'
+    / 'raw'
+    / 'national_ghg_inventory.csv'
+)
+
 df = pd.read_csv(
-    'data/raw/national_ghg_inventory.csv',
+    csv_path,
     encoding='utf-8-sig',
     keep_default_na=False
 )
