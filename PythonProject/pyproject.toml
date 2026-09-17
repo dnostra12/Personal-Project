@@ -5,8 +5,11 @@ requires-python = ">=3.14"
 dependencies = [
     "ipykernel>=7.3.0",
     "jupyter>=1.1.1",
+    "matplotlib>=3.11.2",
     "numpy>=2.5.3",
     "pandas>=3.0.5",
+    "pandas-stubs~=3.0.5",
     "pymysql>=1.2.0",
     "sqlalchemy>=2.0.53",
+    "streamlit>=1.64.0",
 ]
