@@ -14,7 +14,17 @@ st.set_page_config(
     layout='wide'
 )
 
-plt.rcParams['font.family'] = 'Malgun Gothic'
+# 한글 글꼴: 실행 환경에 설치된 글꼴을 순서대로 찾아 사용
+# (Windows: Malgun Gothic / 배포 서버(Linux): NanumGothic, packages.txt로 설치)
+from matplotlib import font_manager
+
+_installed_fonts = {f.name for f in font_manager.fontManager.ttflist}
+
+for _font in ['Malgun Gothic', 'NanumGothic', 'AppleGothic', 'Noto Sans CJK KR']:
+    if _font in _installed_fonts:
+        plt.rcParams['font.family'] = _font
+        break
+
 plt.rcParams['axes.unicode_minus'] = False
 
 
