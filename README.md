@@ -2,8 +2,7 @@
 
 Python·Pandas로 국가 온실가스 인벤토리를 전처리하고, MySQL·SQL로 분야별 감소 기여도를 계산한 뒤, 제조업 세부 업종의 1차 감축 검토 대상을 데이터 기준으로 분류한 프로젝트입니다. 결과는 Streamlit 대시보드로 구현했습니다.
 
-<!-- Streamlit 배포 후 아래 줄의 링크를 채워 주세요 -->
-- 대시보드: (배포 후 추가)
+- 대시보드: https://junhyung-project-1.streamlit.app/
 
 ## 분석 질문
 
